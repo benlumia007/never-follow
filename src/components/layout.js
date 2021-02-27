@@ -8,9 +8,10 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import Header from './header';
+import Content from './content';
 import Footer from './footer';
 
-const Layout = () => {
+const Layout = ( { children} ) => {
     const data = useStaticQuery( graphql`
     query {
         site {
@@ -29,6 +30,7 @@ const Layout = () => {
                 siteTitle={ data.site.siteMetadata.title }
                 siteDescription = { data.site.siteMetadata.description }
             />
+            <Content children = { children } />
             <Footer siteTitle = { data.site.siteMetadata.title } />
         </>
     )
