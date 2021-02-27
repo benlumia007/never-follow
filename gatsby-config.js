@@ -8,5 +8,8 @@ module.exports = {
     siteMetadata: {
         title: `Benjamin Lu`,
         description: "WordPress Developer"
-    }
+    },
+    plugins: [
+        `gatsby-plugin-sass`
+    ]
 }
