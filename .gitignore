@@ -1,3 +1,5 @@
 .cache
 node_modules
 public
+src/mix-manifest.json
+package-lock.json
