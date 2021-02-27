@@ -7,9 +7,23 @@
 module.exports = {
     siteMetadata: {
         title: `Benjamin Lu`,
-        description: "WordPress Developer"
+        description: "WordPress Developer",
+        primaryMenu: [
+            {
+                name: `Home`,
+                url: `/`,
+            },
+            {
+                name: `About`,
+                url: `/about`
+            },
+            {
+                name: `Contact`,
+                url: `/contact`
+            }
+        ]
     },
     plugins: [
-        `gatsby-plugin-sass`
+        `gatsby-plugin-sass`,
     ]
 }
