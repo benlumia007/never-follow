@@ -1,0 +1,12 @@
+.site-header {
+    background: #fcfcfc;
+    border-bottom: 0.063rem solid #f3f3f3;
+
+    .site-branding {
+        .site-title,
+        .site-description {
+            margin: 0;
+            padding: 0;
+        }
+    }
+}

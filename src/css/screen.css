@@ -1,3 +1,39 @@
 body {
   font-family: "Merriweather", serif;
+  font-family: var(--font-family-primary, "Merriweather", serif);
+  margin: 0;
+}
+
+.site-header {
+  background: #fcfcfc;
+  border-bottom: 0.063rem solid #f3f3f3;
+}
+.site-header .site-branding .site-title,
+.site-header .site-branding .site-description {
+  margin: 0;
+  padding: 0;
+}
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  word-wrap: normal;
+  border: none;
+}
+.screen-reader-text:active, .screen-reader-text:focus {
+  clip: auto;
+  -webkit-clip-path: none;
+          clip-path: none;
+  display: block;
+  height: auto;
+  width: auto;
+  z-index: 100000;
+  text-decoration: none;
 }

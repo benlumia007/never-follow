@@ -1,0 +1,22 @@
+/// Returns a map of font families in name-value format.
+///
+/// @since  1.0.0
+/// @access public
+/// @return {map}  Map of defined font families.
+@function font-families() {
+	@return (
+		primary: var( --font-family-primary, 'Merriweather', serif ),
+		heading: var( --font-family-heading, 'Fira Sans', serif ),
+	);
+}
+
+/// Returns a single font family value by name.
+///
+/// @since  1.0.0
+/// @access public
+/// @param  {string}  $name  Font familiy name.
+/// @return {string}         Font family value.
+
+@function font-family( $name ) {
+	@return map-get( font-families(), $name );
+}
